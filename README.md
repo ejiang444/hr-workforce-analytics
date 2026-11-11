@@ -120,26 +120,33 @@ Analysis will include:
 ```
 hr-workforce-analytics/
 │
-├── data/                                # Original and cleaned HR datasets
-│   ├── HRDataset_v14.csv                # Original dataset downloaded from Kaggle
-│   └── cleaned_hr_data.csv              # Cleaned dataset used for analysis
+├── app/                                        # HR analytics web application
+│   ├── dashboard.py                            # Main Streamlit application
+│   ├── data_upload.py                          # CSV and Excel uploads
+│   ├── data_cleaning.py                        # Data validation and cleaning
+│   ├── analytics.py                            # HR metrics and calculations
+│   └── visualizations.py                       # Interactive charts
 │
-├── python/                              # Python data analysis files
-│   └── exploratory_data_analysis.ipynb  # Data cleaning, exploration, and visualizations
+├── data/                                       # Original and cleaned HR datasets
+│   ├── HRDataset_v14.csv                       # Original dataset downloaded from Kaggle
+│   └── cleaned_hr_data.csv                     # Cleaned dataset used for analysis
 │
-├── sql/                                 # SQL queries for analyzing HR data
-│   ├── data_exploration.sql             # Initial data exploration and quality checks
-│   ├── recruitment_analysis.sql         # Recruitment source and hiring trend analysis
-│   └── employee_analysis.sql            # Employee status, salary, and turnover analysis
+├── python/                                     # Python data analysis files
+│   └── exploratory_data_analysis.ipynb         # Data cleaning, exploration, and visualizations
 │
-├── dashboard/                           # Power BI dashboard files
-│   └── hr_workforce_dashboard.pbix      # Interactive HR workforce dashboard
+├── sql/                                        # SQL queries for analyzing HR data
+│   ├── data_exploration.sql                    # Initial data exploration and quality checks
+│   ├── recruitment_analysis.sql                # Recruitment source and hiring trend analysis
+│   └── employee_analysis.sql                   # Employee status, salary, and turnover analysis
 │
-├── screenshots/                         # Dashboard previews and project visuals
-│   └── dashboard_preview.png            # Screenshot of the completed dashboard
+├── dashboard/                                  # Power BI dashboard files
+│   └── hr_workforce_dashboard.pbix             # Interactive HR workforce dashboard
 │
-├── requirements.txt                     # Required Python libraries and dependencies
-└── README.md                            # Project overview, setup instructions, and findings
+├── screenshots/                                # Dashboard previews and project visuals
+│   └── dashboard_preview.png                   # Screenshot of the completed dashboard
+│
+├── requirements.txt                            # Required Python libraries and dependencies
+└── README.md                                   # Project overview, setup instructions, and findings
 ```
 
 ### 📊  Data Requirements
